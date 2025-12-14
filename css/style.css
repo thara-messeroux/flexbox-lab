@@ -9,9 +9,11 @@ body {
 }
 
 nav {
-    align-items: center; /* vertically centers both groups */
+    align-items: center;
+    /* vertically centers both groups */
     background-color: white;
-    display: flex; /* turn nav into a flex container. makes destinations+actions sit in one row */
+    display: flex;
+    /* turn nav into a flex container. makes destinations+actions sit in one row */
     padding: 8px 16px;
 }
 
@@ -23,10 +25,29 @@ nav {
 }
 
 #actions {
-    align-items: center; /* vertical center */
-    display: flex; /* keeps the icon, sign in, sign up in one row */
-    gap: 1rem; /* spacing between action items */
-    margin-left: auto; /* push to the far right */
+    align-items: center;
+    /* vertical center */
+    display: flex;
+    /* keeps the icon, sign in, sign up in one row */
+    gap: 1rem;
+    /* spacing between action items */
+    margin-left: auto;
+    /* push to the far right */
+}
+
+#hero {
+    align-items: center;
+    /* center children horizontally */
+    display: flex;
+    /* turn hero into flex container */
+    flex-direction: column;
+    /* stack title, search, trending vertically */
+    gap: 5rem;
+    /* space between header, search, trending */
+    justify-content: center;
+    /* center vertically (if hero has height) */
+    text-align: center;
+    /* center text */
 }
 
 p {
@@ -103,6 +124,17 @@ nav button {
     padding: 10px 16px;
     border: 1px solid black;
     background-color: white;
+}
+
+#trending {
+    align-items: center;
+    /* vertically align label + pills */
+    display: flex;
+    /* put children in a row */
+    gap: 12px;
+    /* space between label and pills */
+    justify-content: center;
+    /* center the whole row in the hero */
 }
 
 #trending p {
