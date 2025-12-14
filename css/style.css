@@ -9,8 +9,24 @@ body {
 }
 
 nav {
+    align-items: center; /* vertically centers both groups */
     background-color: white;
+    display: flex; /* turn nav into a flex container. makes destinations+actions sit in one row */
     padding: 8px 16px;
+}
+
+#destinations {
+    display: flex;
+    /* children align in a row */
+    gap: 1rem;
+    /* spacing between links */
+}
+
+#actions {
+    align-items: center; /* vertical center */
+    display: flex; /* keeps the icon, sign in, sign up in one row */
+    gap: 1rem; /* spacing between action items */
+    margin-left: auto; /* push to the far right */
 }
 
 p {
