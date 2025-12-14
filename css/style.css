@@ -114,6 +114,8 @@ nav button {
 
 .card-footer {
     font-size: 14px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-footer * {
@@ -121,7 +123,6 @@ nav button {
 }
 
 #subnav {
-
     background-color: white;
     display: flex;
     /* split left + right */
